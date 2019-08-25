@@ -4,7 +4,7 @@ import requests
 import time
 import re
 from bs4 import BeautifulSoup
-# 'AL','AK','AZ','AR','CA','CO','CT','DE','FL','GA','HI','ID','IL','IN','IA','KS','KY','LA','ME','MD','MA','MI','MN','MS','MO','MT','NE','NV',
+
 regions = ['NH','NJ','NM','NY','NC','ND','OH','OK','OR','PA','RI','SC','SD','TN','TX','UT','VT','VA','WA','WV','WI','WY']
 url = 'https://www.indeed.com/jobs?q=machine+learning+engineer&l='
 for region in regions:

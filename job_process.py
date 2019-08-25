@@ -16,10 +16,6 @@ for site in job_sites:
 states = [re.split('\_',file)[0] for file in files]
 idx = pd.Index(range(len(df_total))).unique()
 df = pd.DataFrame(df_total.values,columns=list(df_total.columns),index=idx).drop_duplicates()
-# city_states = {'Arizona':'AZ','California':'CA','Georgia':'GA','Illinois':'IL','Maryland':'MD','Massachusetts':'MA','New York State':\
-# 				'NY','North Carolina':'NC','Virginia':'VA'}
-# for state in list(city_states.keys()):
-# 	df.iloc[df[df.Cities==state].index] = city_states[state]
 top_companies = []
 idx_state = {}
 for state in states:
